@@ -75,8 +75,8 @@ You need to create a new "OAuth 2.0 Client ID"  here: https://console.cloud.goog
 
 You need to create a new Application Group in the AD FS Management Console,
 and configure it with Issuance Transformation Rules that release
-User-Principal-Name. Using AD FS introduces a dependency on Crypt::JWT to
-decode and validate the attribute assertions.
+User-Principal-Name. Using AD FS introduces a dependency on the Perl package Crypt::JWT to
+decode and validate the attribute assertions (Download with your favorite package manager).
 
 ```
 <auth_oauth>
@@ -96,7 +96,10 @@ decode and validate the attribute assertions.
 </auth_oauth>
 ```
 
-=== Microsoft Azure ID
+=== Microsoft Azure ID / Entra
+
+Using Microsoft Azure AD / Entra introduces a dependency on the Perl package Crypt::JWT to
+decode and validate the attribute assertions (Download with your favorite package manager).
 
 ```
 <auth_oauth>
